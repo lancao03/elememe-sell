@@ -1,0 +1,85 @@
+@import "../../../common/scss/mixin";
+.icon {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    &.icon-12 {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+        background-size: 12px 12px;
+    }
+    &.icon-16 {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        background-size: 16px 16px;
+    }
+    //尺寸12 非fill
+    &.icon-12.decrease {
+        @include bg-image('images/decrease_1')
+    }
+    &.icon-12.discount {
+        @include bg-image('images/discount_1')
+    }
+    &.icon-12.discount {
+        @include bg-image('images/discount_1')
+    }
+    &.icon-12.guarantee {
+        @include bg-image('images/guarantee_1')
+    }
+    &.icon-12.invoice {
+        @include bg-image('images/invoice_1')
+    }
+    &.icon-12.special {
+        @include bg-image('images/special_1')
+    }
+    //尺寸16 非fill
+    &.icon-16.decrease {
+        @include bg-image('images/decrease_2')
+    }
+    &.icon-16.discount {
+        @include bg-image('images/discount_2')
+    }
+    &.icon-16.guarantee {
+        @include bg-image('images/guarantee_2')
+    }
+    &.icon-16.invoice {
+        @include bg-image('images/invoice_2')
+    }
+    &.icon-16.special {
+        @include bg-image('images/special_2')
+    }
+    //尺寸12 fill
+    &.icon-12.icon-fill.decrease {
+        @include bg-image('images/decrease_3')
+    }
+    &.icon-12.icon-fill.discount {
+        @include bg-image('images/discount_3')
+    }
+    &.icon-12.icon-fill.guarantee {
+        @include bg-image('images/guarantee_3')
+    }
+    &.icon-12.icon-fill.invoice {
+        @include bg-image('images/invoice_3')
+    }
+    &.icon-12.icon-fill.special {
+        @include bg-image('images/special_3')
+    }
+    //尺寸16 dill
+    &.icon-16.icon-fill.decrease {
+        @include bg-image('images/decrease_4')
+    }
+    &.icon-16.icon-fill.discount {
+        @include bg-image('images/discount_4')
+    }
+    &.icon-16.icon-fill.guarantee {
+        @include bg-image('images/guarantee_4')
+    }
+    &.icon-16.icon-fill.invoice {
+        @include bg-image('images/invoice_4')
+    }
+    &.icon-16.icon-fill.special {
+        @include bg-image('images/special_4')
+    }
+}
