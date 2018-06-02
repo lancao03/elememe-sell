@@ -1,3 +1,4 @@
+@import '../../common/scss/mixin.scss';
 .shopcart {
     position: fixed;
     left: 0;
@@ -159,7 +160,7 @@
             .food {
                 position: relative;
                 padding: 12px 0;
-                border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+                @include border-1px(rgba(7, 17, 27, 0.1));
                 .name {
                     font-size: 14px;
                     color: rgb(7, 17, 27);

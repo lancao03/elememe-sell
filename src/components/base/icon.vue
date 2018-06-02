@@ -39,6 +39,6 @@
 	}
 </script>
 
-<style lang="scss" src="./icon.scss">
+<style scoped lang="scss" src="./scss/icon.scss">
 
 </style>

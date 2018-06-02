@@ -1,8 +1,8 @@
 import Vrouter from 'vue-router'
 import Vue from 'vue'
-import goods from '@/components/goods/goods'
-import ratings from '@/components/ratings/ratings'
-import seller from '@/components/seller/seller'
+import goods from '@/pages/goods/goods'
+import ratings from '@/pages/ratings/ratings'
+import seller from '@/pages/seller/seller'
 
 Vue.use(Vrouter)
 

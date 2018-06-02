@@ -22,6 +22,8 @@
 
 <script>
 	import header from './components/header/header'
+	import {urlParse} from '@/common/js/util'
+
 
 //	const ERR_OK = 0
 
@@ -31,11 +33,17 @@
 		},
 		data() {
 			return {
-				seller: {}
+				seller: {
+					id:(()=>{
+						let queryParam=urlParse();
+						console.log(queryParam)
+						return queryParam.id
+					})()
+				}
 			}
 		},
 		created() {
-			this.$http.get('/api/seller')
+			this.$http.get('/api/seller?id='+this.seller.id)
 				.then((res) => {
 					this.seller = res.data
 					console.log(this.seller)

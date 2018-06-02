@@ -32,11 +32,11 @@
 				</div>
 				<div class="list-content" ref="listContent">
 					<ul>
-						<li class="food" v-for="food in selectFoods">
+						<li class="food border-1px" v-for="food in selectFoods">
 							<div class="name">{{food.name}}</div>
 							<div class="price"><span>￥{{food.price*food.count}}</span></div>
 							<div class="cartcontrol-wrapper">
-								<cartcontrol :food="food"></cartcontrol>
+								<cartcontrol @add="addFood" :food="food"></cartcontrol>
 							</div>
 						</li>
 					</ul>
@@ -199,6 +199,9 @@
 				this.selectFoods.forEach((food) => {
 					food.count = 0
 				})
+			},
+			addFood(target){
+				this.drop(target)
 			}
 		},
 		data() {
@@ -222,6 +225,6 @@
 	}
 </script>
 
-<style lang="scss" src="./shopcart.scss">
+<style scoped lang="scss" src="./shopcart.scss">
 
 </style>

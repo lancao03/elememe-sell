@@ -40,7 +40,7 @@
 </template>
 
 <script>
-	import icon from '@/components/base/icon/icon'
+	import icon from '@/components/base/icon'
 	import shopcart from '@/components/shopcart/shopcart'
 	import cartcontrol from '@/components/cartcontrol/cartcontrol'
 	import food from '@/components/food/food'
@@ -149,6 +149,4 @@
 	}
 </script>
 
-<style lang="scss" src="./goods.scss">
-
-</style>
+<style scoped lang="scss" src="./goods.scss"></style>

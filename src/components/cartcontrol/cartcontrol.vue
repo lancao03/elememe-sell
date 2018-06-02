@@ -44,8 +44,8 @@
 	}
 </script>
 
-<style lang="scss" src="./cartcontrol.scss"></style>
-<style lang="scss">
+<style scoped lang="scss" src="./cartcontrol.scss"></style>
+<style scoped lang="scss">
 	.move-enter-active,
 	.move-leave-active {
 		transition: all .2s linear;

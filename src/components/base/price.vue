@@ -22,7 +22,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 	.price {
 		font-weight: 700;
 		line-height: 24px;

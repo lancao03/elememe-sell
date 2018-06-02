@@ -46,7 +46,6 @@
 						<ul v-if="seller.supports" class="supports">
 							<li class="support-item" v-for="(item,index) in seller.supports">
 								<icon :type="item.type" size="m"></icon>
-								<!--<span class="icon" :class="classMap[item.type]"></span>-->
 								<span class="text">{{item.description}}</span>
 							</li>
 						</ul>
@@ -70,7 +69,7 @@
 
 <script>
 	import star from '@/components/star/star'
-	import icon from '@/components/base/icon/icon'
+	import icon from '@/components/base/icon'
 	export default {
 		props: {
 			seller: {
@@ -100,4 +99,4 @@
 	}
 </script>
 
-<style lang="scss" src="./header.scss"></style>
+<style scoped lang="scss" src="./header.scss"></style>

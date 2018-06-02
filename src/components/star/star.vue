@@ -54,4 +54,4 @@
 	}
 </script>
 
-<style lang="scss" src="./star.scss"></style>
+<style scoped lang="scss" src="./star.scss"></style>
